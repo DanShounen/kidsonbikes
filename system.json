@@ -8,9 +8,6 @@
   "scripts": [
     "scripts/roll.js" 
   ],
-  "styles": [
-    "css/styles.css"
-  ],
   "packs": [],
   "actors": {
     "types": ["character", "npc"],
