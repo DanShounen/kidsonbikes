@@ -6,7 +6,7 @@
   "minimumCoreVersion": "10",
   "compatibleCoreVersion": "10",
   "scripts": [
-    "scripts/roll.js"
+    "scripts/roll.js" 
   ],
   "styles": [
     "css/styles.css"
