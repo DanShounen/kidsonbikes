@@ -12,6 +12,16 @@
     "css/styles.css"
   ],
   "packs": [],
+  "actors": {
+    "types": ["character", "npc"],
+    "sheets": {
+      "kidsonbikes.ActorSheet": {
+        "label": "Kids on Bikes Character Sheet",
+        "default": true,
+        "types": ["character"]
+      }
+    }
+  },
   "manifest": "https://raw.githubusercontent.com/DanShounen/kidsonbikes/main/system.json",
   "download": "https://github.com/DanShounen/kidsonbikes/archive/refs/heads/main.zip",
   "url": "https://github.com/DanShounen/kidsonbikes"
