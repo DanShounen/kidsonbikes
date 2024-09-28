@@ -1,5 +1,5 @@
 {
-  "name": "kids-on-bikes",
+  "name": "kidsonbikes",
   "title": "Kids on Bikes",
   "description": "A custom Foundry VTT system for the Kids on Bikes RPG.",
   "author": "Your Name",
@@ -11,5 +11,5 @@
   ],
   "packs": [],
   "url": "https://github.com/DanShounen/kids-on-bikes-system",
-  "manifest": "systems/kids-on-bikes/system.json"
+  "manifest": "systems/kidsonbikes/system.json"
 }
