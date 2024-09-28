@@ -1,15 +1,17 @@
 {
-  "name": "kids-on-bikes",
+  "name": "kidsonbikes",
   "title": "Kids on Bikes",
-  "description": "A custom Foundry VTT system for the Kids on Bikes RPG.",
-  "author": "Your Name",
-  "version": "0.1.0",
+  "description": "A custom system for Foundry VTT",
+  "version": "1.0.0",
   "minimumCoreVersion": "10",
   "compatibleCoreVersion": "10",
   "scripts": [
-    "module/scripts/roll.js"
+    "scripts/roll.js"
+  ],
+  "styles": [
+    "css/styles.css"
   ],
   "packs": [],
-  "url": "https://github.com/DanShounen/kids-on-bikes-system",
-  "manifest": "systems/kids-on-bikes/system.json"
+  "manifest": "https://raw.githubusercontent.com/DanShounen/kidsonbikes/main/system.json",
+  "download": "https://github.com/DanShounen/kidsonbikes/archive/refs/heads/main.zip"
 }
