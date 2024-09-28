@@ -1,0 +1,23 @@
+.effects .item {
+    .effect-source,
+    .effect-duration,
+    .effect-controls {
+      text-align: center;
+      border-left: 1px solid #c9c7b8;
+      border-right: 1px solid #c9c7b8;
+      font-size: 12px;
+    }
+  
+    .effect-controls {
+      border: none;
+    }
+  }
+  
+  // _effects.scss for Kids on Bikes
+  .kids-on-bikes input:focus,
+  .kids-on-bikes textarea:focus,
+  .kids-on-bikes select:focus {
+    outline: none;
+    border-color: $focus-border-color;
+  }
+  

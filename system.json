@@ -1,26 +1,24 @@
 {
-  "name": "kidsonbikes",
+  "id": "kidsonbikes",
   "title": "Kids on Bikes",
-  "description": "A custom system for Foundry VTT",
+  "description": "Kids on Bikes system for FoundryVTT",
   "version": "1.0.0",
-  "minimumCoreVersion": "10",
-  "compatibleCoreVersion": "10",
-  "scripts": [
-    "scripts/actor-sheet.js", 
-    "scripts/roll.js"
-  ],
-  "packs": [],
-  "actors": {
-    "types": ["character", "npc"],
-    "sheets": {
-      "kidsonbikes.ActorSheet": {
-        "label": "Kids on Bikes Character Sheet",
-        "default": true,
-        "types": ["character"]
-      }
-    }
+  "compatibility": {
+    "minimum": 12,
+    "verified": 12.331
   },
+  "authors": [{
+    "name": "Dan"
+  }],
+  "esmodules": ["module/kidsonbikes.mjs"],
+  "styles": ["css/kidsonbikes.css"],
+  "socket": true,
+  "grid": {
+    "distance": 5,
+    "units": "ft"
+  },
+  "primaryTokenAttribute": "system.adversityTokens",
+  "url": "https://github.com/DanShounen/kidsonbikes", 
   "manifest": "https://raw.githubusercontent.com/DanShounen/kidsonbikes/main/system.json",
-  "download": "https://github.com/DanShounen/kidsonbikes/archive/refs/heads/main.zip",
-  "url": "https://github.com/DanShounen/kidsonbikes"
+  "download": "https://github.com/DanShounen/kidsonbikes/archive/refs/heads/main.zip"
 }

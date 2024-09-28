@@ -1,0 +1,51 @@
+// Flexbox Utility Classes
+.flex-group-center {
+    @include flexbox(center, center); // Horizontally and vertically center
+    text-align: center;
+  }
+  
+  .flex-group-left {
+    @include flexbox(flex-start, center); // Left-align horizontally, center vertically
+    text-align: left;
+  }
+  
+  .flex-group-right {
+    @include flexbox(flex-end, center); // Right-align horizontally, center vertically
+    text-align: right;
+  }
+  
+  .flexshrink {
+    flex: 0; // Element doesn't shrink
+  }
+  
+  .flex-between {
+    justify-content: space-between; // Distribute space evenly
+  }
+  
+  .flexlarge {
+    flex: 2; // Takes up twice the space
+  }
+  
+  // Alignment Utility Classes
+  .align-left {
+    @include flexbox(flex-start, center); // Left-align horizontally, center vertically
+    text-align: left;
+  }
+  
+  .align-right {
+    @include flexbox(flex-end, center); // Right-align horizontally, center vertically
+    text-align: right;
+  }
+  
+  .align-center {
+    @include flexbox(center, center); // Center both horizontally and vertically
+    text-align: center;
+  }
+  
+  // Only apply the right alignment to specific inputs with this class
+  .right-align-input {
+    flex: 1;
+    margin-left: auto;
+    max-width: 260px;
+  }
+  

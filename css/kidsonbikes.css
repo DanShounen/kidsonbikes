@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+/* Global styles */
+.window-app {
+  font-family: "Roboto", sans-serif;
+}
+
+.rollable:hover, .rollable:focus {
+  color: #000;
+  text-shadow: 0 0 10px rgb(146, 0, 225);
+  cursor: pointer;
+}
+
+/* Grid system */
+.grid {
+  display: grid;
+  gap: 10px;
+  margin: 10px 0;
+  padding: 0;
+}
+
+.grid-2col, .grid-3col, .grid-4col, .grid-5col, .grid-6col, .grid-7col, .grid-8col, .grid-9col, .grid-10col, .grid-11col, .grid-12col {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+/* Flexbox system */
+.flex-group-center, .flex-group-left, .flex-group-right {
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+}
+
+.flexshrink, .flexlarge {
+  flex: 0;
+}
+
+.right-align-input {
+  margin-left: auto;
+  max-width: 260px;
+}
+
+/* Kids on Bikes specific styles */
+.kids-on-bikes .item-form {
+  font-family: "Roboto", sans-serif;
+}
+
+.kids-on-bikes .sheet-header {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10px;
+}
+
+.kids-on-bikes .sheet-header .profile-img {
+  flex: 0 0 100px;
+  height: 100px;
+  margin-right: 10px;
+}
+
+.kids-on-bikes .sheet-header h1.charname input {
+  width: 100%;
+  height: 100%;
+}
+
+.kids-on-bikes div.editor-border {
+  border: 2px solid rgb(81, 81, 81);
+  border-radius: 10px;
+}
+
+.kids-on-bikes .items-header {
+  background: rgba(0, 0, 0, 0.05);
+  border: 2px groove #eeede0;
+}
+
+.kids-on-bikes .items-list .item {
+  display: flex;
+  padding: 0 2px;
+  border-bottom: 1px solid #c9c7b8;
+}
+
+.kids-on-bikes .items-list .item .item-name h3, .kids-on-bikes .items-list .item .item-name h4 {
+  margin: 0;
+  white-space: nowrap;
+}
+
+.kids-on-bikes .items-list .item-controls {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.kids-on-bikes .item-formula {
+  flex: 0 0 200px;
+  padding: 0 8px;
+}
+
+.kids-on-bikes input:focus, .kids-on-bikes textarea:focus, .kids-on-bikes select:focus {
+  outline: none;
+  border-color: #8102dd;
+}

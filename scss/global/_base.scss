@@ -1,0 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+.window-app {
+  font-family: $font-stack; // Ensure this is defined in your variables file
+}
+
+.rollable {
+  &:hover,
+  &:focus {
+    color: #000;
+    text-shadow: $hover-text-shadow; // Ensure this is defined in your variables file
+    cursor: pointer;
+  }
+}

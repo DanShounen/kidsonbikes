@@ -1,0 +1,35 @@
+<form class="{{cssClass}} {{actor.type}} flexcol" autocomplete="off">
+
+  {{!-- Sheet Header --}}
+  <header class="sheet-header">
+    <img class="profile-img" src="{{actor.img}}" data-edit="img" title="{{actor.name}}" height="100" width="100"/>
+    <div class="header-fields">
+      <h1 class="charname"><input name="name" type="text" value="{{actor.name}}" placeholder="Name"/></h1>
+
+      <div class="resources grid">
+        <div class="resource flex-group-center">
+          <label for="system.trope" class="resource-label">Trope</label>
+          <div class="resource-content flexrow flex-center flex-between">
+            <input type="text" name="system.trope" value="{{system.trope}}" data-dtype="String"/>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  {{!-- Sheet Tab Navigation --}}
+  <nav class="sheet-tabs tabs" data-group="primary">
+    {{!-- Default tab is specified in actor-sheet.mjs --}}
+    <a class="item" data-tab="features">Features</a>
+  </nav>
+
+  {{!-- Sheet Body --}}
+  <section class="sheet-body">
+
+    {{!-- Owned Features Tab --}}
+    <div class="tab features" data-group="primary" data-tab="features">
+      {{> "systems/kidsonbikes/templates/actor/parts/actor-npc-stats.html"}}
+    </div>
+  </section>
+</form>
+

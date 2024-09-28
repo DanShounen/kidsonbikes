@@ -1,0 +1,11 @@
+.header {
+    background-color: $c-white;
+    color: $c-dark;
+    border: 1px solid $primary-border-color;
+  }
+  
+  .button:hover {
+    text-shadow: $hover-text-shadow;
+    border-color: $focus-border-color;
+  }
+  

@@ -1,0 +1,103 @@
+<div class="character-sheet">
+  <!-- Player Name -->
+  <div class="input-group player-name">
+    <label>Player Name:</label>
+    <input type="text" name="data.playerName" />
+  </div>
+
+  <!-- Character Info -->
+  <div class="input-group name">
+    <label>Name:</label>
+    <input type="text" name="data.name" />
+  </div>
+  <div class="input-group age">
+    <label>Age:</label>
+    <input type="text" name="data.age" />
+  </div>
+  <div class="input-group fear">
+    <label>Fear:</label>
+    <input type="text" name="data.fear" />
+  </div>
+  <div class="input-group motivation">
+    <label>Motivation:</label>
+    <input type="text" name="data.motivation" />
+  </div>
+  <div class="input-group flaws">
+    <label>Flaws:</label>
+    <input type="text" name="data.flaws" />
+  </div>
+  <div class="input-group description">
+    <label>Description:</label>
+    <input type="text" name="data.description" />
+  </div>
+
+  <!-- Stats Section -->
+  <div class="stats-group">
+    <div class="stat fight">
+      <label>Fight:</label>
+      <input type="text" name="data.stats.fight" placeholder="Dice (e.g., d6)" />
+      <button type="button" onclick="rollAttribute(actor, 'fight')">Roll Fight</button>
+    </div>
+    <div class="stat flight">
+      <label>Flight:</label>
+      <input type="text" name="data.stats.flight" placeholder="Dice (e.g., d8)" />
+      <button type="button" onclick="rollAttribute(actor, 'flight')">Roll Flight</button>
+    </div>
+    <div class="stat brains">
+      <label>Brains:</label>
+      <input type="text" name="data.stats.brains" placeholder="Dice (e.g., d10)" />
+      <button type="button" onclick="rollAttribute(actor, 'brains')">Roll Brains</button>
+    </div>
+    <div class="stat brawn">
+      <label>Brawn:</label>
+      <input type="text" name="data.stats.brawn" placeholder="Dice (e.g., d12)" />
+      <button type="button" onclick="rollAttribute(actor, 'brawn')">Roll Brawn</button>
+    </div>
+    <div class="stat charm">
+      <label>Charm:</label>
+      <input type="text" name="data.stats.charm" placeholder="Dice (e.g., d4)" />
+      <button type="button" onclick="rollAttribute(actor, 'charm')">Roll Charm</button>
+    </div>
+    <div class="stat grit">
+      <label>Grit:</label>
+      <input type="text" name="data.stats.grit" placeholder="Dice (e.g., d6)" />
+      <button type="button" onclick="rollAttribute(actor, 'grit')">Roll Grit</button>
+    </div>
+  </div>
+
+  <!-- Adversity Tokens -->
+  <div class="input-group adversity-tokens">
+    <label>Adversity Tokens:</label>
+    <input type="number" name="data.adversityTokens" />
+  </div>
+
+  <!-- Strengths Section -->
+  <div class="strengths">
+    <label>Strengths:</label>
+    <input type="checkbox" name="data.strengths.coolUnderPressure" /> Cool Under Pressure<br>
+    <input type="checkbox" name="data.strengths.easygoing" /> Easygoing<br>
+    <input type="checkbox" name="data.strengths.gross" /> Gross<br>
+    <input type="checkbox" name="data.strengths.heroic" /> Heroic<br>
+    <input type="checkbox" name="data.strengths.intuitive" /> Intuitive<br>
+    <input type="checkbox" name="data.strengths.loyal" /> Loyal<br>
+    <input type="checkbox" name="data.strengths.lucky" /> Lucky<br>
+    <input type="checkbox" name="data.strengths.prepared" /> Prepared<br>
+    <input type="checkbox" name="data.strengths.protective" /> Protective<br>
+    <input type="checkbox" name="data.strengths.quickHealing" /> Quick Healing<br>
+    <input type="checkbox" name="data.strengths.rebellious" /> Rebellious<br>
+    <input type="checkbox" name="data.strengths.skilledAt" /> Skilled At<br>
+    <input type="checkbox" name="data.strengths.tough" /> Tough<br>
+    <input type="checkbox" name="data.strengths.treasureHunter" /> Treasure Hunter<br>
+    <input type="checkbox" name="data.strengths.unassuming" /> Unassuming<br>
+    <input type="checkbox" name="data.strengths.wealthy" /> Wealthy<br>
+  </div>
+
+  <!-- Notes Section -->
+  <div class="input-group notes">
+    <label>Notes:</label>
+    <textarea name="data.notes"></textarea>
+  </div>
+</div>
+
+<!-- Link to roll.js for dice rolling -->
+<script type="text/javascript" src="systems/kidsonbikes/scripts/roll.js"></script>
