@@ -6,7 +6,8 @@
   "minimumCoreVersion": "10",
   "compatibleCoreVersion": "10",
   "scripts": [
-    "scripts/roll.js" 
+    "scripts/actor-sheet.js", 
+    "scripts/roll.js"
   ],
   "packs": [],
   "actors": {
