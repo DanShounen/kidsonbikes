@@ -10,6 +10,6 @@
     "module/scripts/roll.js"
   ],
   "packs": [],
-  "url": "https://github.com/DanShounen/kids-on-bikes-system",
+  "url": "https://github.com/DanShounen/kidsonbikes",
   "manifest": "systems/kidsonbikes/system.json"
 }
